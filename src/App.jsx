@@ -9,7 +9,7 @@ function App(){
         <Nav>
 
         </Nav>
-        <ItemListContainer></ItemListContainer>
+        <ItemListContainer greeting="¡Bienvenido a FCamisetas!"></ItemListContainer>
     </div>
 }
 

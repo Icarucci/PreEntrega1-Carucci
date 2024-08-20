@@ -1,6 +1,6 @@
-export const ItemListContainer = () =>{
+export const ItemListContainer = ({greeting}) =>{
     return <div>
-        <h1>¡Bienvenido a FCamisetas!</h1>
+        <h1>{greeting}</h1>
         
     </div>
 }
