@@ -1,4 +1,5 @@
 import { Nav }  from "./components/NavBar/NavBar";
+import { ItemListContainer }  from "./components/ItemListContainer";
 
 
 function App(){
@@ -8,7 +9,7 @@ function App(){
         <Nav>
 
         </Nav>
-        <h1>FCamisetas</h1>
+        <ItemListContainer></ItemListContainer>
     </div>
 }
 
