@@ -14,25 +14,25 @@ export const Nav = () => {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link" href="#">CAMISETAS</a>
+                            <a className="nav-link" href="/home">CAMISETAS</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">HOMBRE</a>
+                            <a className="nav-link" href="/hombre">HOMBRE</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">MUJER</a>
+                            <a className="nav-link" href="/mujer">MUJER</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">NIÑOS</a>
+                            <a className="nav-link" href="/niños">NIÑOS</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Selecciones</a>
+                            <a className="nav-link" href="/selecciones">Selecciones</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Equipos</a>
+                            <a className="nav-link" href="/equipos">Equipos</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">OUTLET</a>
+                            <a className="nav-link" href="/outlet">OUTLET</a>
                         </li>
                     </ul>
                     <CartWidget />
