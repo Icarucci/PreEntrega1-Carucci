@@ -1,4 +1,4 @@
-import { CartWidget } from "./CartWidget";
+import { CartWidget } from "../CartWidget/CartWidget.jsx";
 import Logo from "./FCLogo.png";
 
 export const Nav = () => {
