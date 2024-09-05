@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import ItemList from "../ItemList/ItemList";
-import getProducts from "../../api";
+import { getProducts } from "../../api";
 import "../Item/Item.css";
 
 
