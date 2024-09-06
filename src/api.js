@@ -16,8 +16,25 @@ export const getProductsById = async (productId) => {
         return products.find(prod => prod.id === productId);
         
     } catch (error) {
-        console.error("Error fetching products:", error);
+        console.error("Error con fech:", error);
         return null;
     }
 }
 
+export const getProductsByCategory = async (productCategory) => {
+    try {
+        const products = await getProducts();
+
+        const lowercasedCategory = productCategory.toLowerCase();
+
+        const filteredProducts = products.filter(prod => Object.values(prod).some(prop => typeof prop === 'string' && prop.toLowerCase().includes(lowercasedCategory)
+            )
+        );
+
+        return filteredProducts;
+
+    } catch (error) {
+        console.error("Error fetching productos por categoria:", error);
+        return null;
+    }
+}

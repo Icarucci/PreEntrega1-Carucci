@@ -1,5 +1,6 @@
 import "./Item.css";
 import ItemCount from "../ItemCount/ItemCount";
+import { Link } from "react-router-dom";
 
 const Item = ({id, nombre, descripcion, precio, categoria, sexo, imagen, talle, color, stock, marca, material, sku}) => {
 
@@ -10,7 +11,7 @@ const Item = ({id, nombre, descripcion, precio, categoria, sexo, imagen, talle, 
             <p className="card-precio">$ {precio}</p>
             <p className="card-text">{descripcion}</p>
             <div className="card-detalles">
-            <button className="card-link">Ver detalles</button>
+            <Link to={`/item/${id}`} className="card-link">Ver detalles</Link>
             <ItemCount initial={1} stock={10} onAdd={(quantity) => console.log("Cantidad agregada ", quantity)}/>
             </div>            
         </article>
