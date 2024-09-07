@@ -5,10 +5,15 @@ const HomePage = () => {
 
     return(
         <main className="mainHome">
-            <h1>¡Bienvenido a FCamisetas!</h1>     
-            <Link to={`/camisetas`} className="link">
-                <h2>VER PRODUCTOS</h2>
-            </Link>
+            <div className="divH1">
+                <p>¡Bienvenido a FCamisetas!</p>     
+            </div>
+            <div className="divH2">
+                <Link to={`/camisetas`} className="link">
+                    <p>Ingresá aquí</p>
+                </Link>
+            </div>
+
         </main>
            
     )
