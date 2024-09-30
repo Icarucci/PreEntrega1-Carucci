@@ -1,0 +1,47 @@
+.titulos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #000;
+
+}
+
+.titulos h2 {
+    margin: 10px;
+    font-size: 20px;
+
+
+}
+
+.cart {
+    margin: 20px;
+
+}
+
+.items {
+    border: 2px solid #000; 
+}
+
+.finalizar {
+    margin-top: 20px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.productos {
+    margin: 10px;
+    border-bottom: 2px solid rgb(204, 203, 203);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.producto {
+    display: flex;
+    align-items: center;
+  }
+  
+  .imagen {
+    width: 70px;
+    margin-right: 10px;
+  }
