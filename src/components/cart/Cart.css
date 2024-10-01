@@ -175,8 +175,8 @@
 }
 
 .boton-link-comprar:hover {
-  background-color: #0070da;          /* Cambia el color de fondo */
-  color: #000000;                     /* Cambia el color del texto */
-  transform: scale(1.05);             /* Escala el botón ligeramente */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Añade sombra al botón */
+  background-color: #0070da;
+  color: #000000;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
