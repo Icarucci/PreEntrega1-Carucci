@@ -1,0 +1,47 @@
+.card-detail{
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #fff;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin-top: 10px;
+    display: flex;
+}
+
+.img{
+    width: 500px;
+    margin-bottom: 10px;
+}
+  
+.card-valor{
+    margin: 20px 0px 20px 0px;
+    padding-left: 10px;
+    text-align: start;
+    font-size: 25px;
+    color: #000000;
+}
+
+.card-texto{
+    font-size: 30px;
+    height: 30px;
+    margin: 40px 0px 70px 0px;
+    font-weight: bold;
+}
+
+.boton-talles{
+    display: inline-block;
+    margin: 0px 2px 0px 2px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #1C1C1C;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}

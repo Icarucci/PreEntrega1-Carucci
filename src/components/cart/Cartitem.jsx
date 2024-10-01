@@ -1,8 +1,9 @@
 import "./Cart.css";
 
 
-const Cartitem = ({item}) => {
+const Cartitem = ({item, removeItem, itemInCart}) => {
 
+    
     const subtotal = item.quantity * item.precio;
         
 
@@ -12,14 +13,18 @@ const Cartitem = ({item}) => {
             <img className="imagen" src={item.imagen} alt={item.nombre} />
             <p>{item.nombre}</p>
             </div>
-            <div>
+            <div  className="precio">
                 <p>$ {item.precio}</p>
             </div>
-            <div>
+            <div  className="cantidad">
                 <p>{item.quantity}</p>
             </div>
-            <div>
+            <div  className="subtotal">
                 <p>$ {subtotal}</p>
+            </div>
+            <div className="remove">
+                <button onClick={() => removeItem(item.id)}>X</button>
+                {itemInCart}
             </div>
         </div>
 
