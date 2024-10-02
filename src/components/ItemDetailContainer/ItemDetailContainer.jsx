@@ -18,9 +18,15 @@ const ItemDetailContainer = () => {
 
     return(
         <div className="image-list">
-            <ItemDetail {...product}/>
+            {
+                product ?
+                <ItemDetail {...product}/>
+                : <span className="loader"></span>
+            }
+
         </div>
     )
 }
 
 export default ItemDetailContainer;
+

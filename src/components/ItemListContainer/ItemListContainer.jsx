@@ -28,7 +28,7 @@ const ItemListContainer = ({greeting}) =>{
 
     return (
         <div>
-            <h1>{greeting}</h1>
+            <h1>{greeting}{categoryId && ` / ${categoryId.toUpperCase()}`}</h1>
             {
                 products.length > 0 ?
                 <ItemList className="image-list-container" products={products}/>
