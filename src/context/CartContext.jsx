@@ -11,10 +11,14 @@ export const CartProvider = ({ children }) => {
         if(!isInCart(item.id)) {
             setCart(prev => [...prev, {...item, quantity}])
         } else {
-            alert("Producto agregado")
+            setCart(prev => 
+                prev.map(prod => 
+                    prod.id === item.id ? { ...prod, quantity: prod.quantity + quantity } : prod
+                )
+            )
         }
     }
-
+    
     const removeItem = (itemId) => {
         const cartUpdated = cart.filter(prod => prod.id !== itemId)
         setCart(cartUpdated)
