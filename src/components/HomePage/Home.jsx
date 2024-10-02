@@ -37,7 +37,7 @@ const HomePage = () => {
             </div>
             <div className="divH2">
                 <Link to={`/camisetas`} className="link">
-                    <p>Ingresá aquí</p>
+                    <p>¡Elegí tu camiseta!</p>
                 </Link>
             </div>
         </main>

@@ -5,15 +5,24 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./components/HomePage/Home";
 import { CartProvider } from "./context/CartContext";
 import Cart from "./components/cart/Cart";
+import { useEffect, useState } from "react";
+import Loading from "./components/Loading/Loading";
 
 
 
 function App(){
+    const [loading, setLoading] = useState(false);
 
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(true);
+        }, 5000);
+        }, []);
+
+    
     return(
 
-    <div>
-        <BrowserRouter>
+    <div>{loading ?        <BrowserRouter>
             <CartProvider>
                 <Nav/>
                 <Routes>
@@ -26,6 +35,7 @@ function App(){
                 </Routes>
             </CartProvider>
         </BrowserRouter>
+    : <Loading></Loading>}
     </div>
     )
 }
