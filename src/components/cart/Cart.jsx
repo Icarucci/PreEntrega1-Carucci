@@ -34,7 +34,7 @@ const Cart = () => {
             </div>
             </div>      
             <div className="finalizar">
-                <Link to="/camisetas">
+                <Link to="/camisetas" className="link">
                         <button className="boton-link">Seguir Comprando</button>
                 </Link>
                 <button className="boton-link" onClick={clearCart}>Vaciar Carrito</button>

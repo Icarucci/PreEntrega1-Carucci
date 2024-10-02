@@ -29,7 +29,12 @@ const ItemListContainer = ({greeting}) =>{
     return (
         <div>
             <h1>{greeting}</h1>
-            <ItemList className="image-list-container" products={products}/>
+            {
+                products.length > 0 ?
+                <ItemList className="image-list-container" products={products}/>
+                : <span class="loader"></span>
+            }
+
         </div>
     )
 }

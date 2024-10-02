@@ -162,6 +162,10 @@
   background-color: #2b9222;
 }
 
+.link{
+  text-decoration: none;
+}
+
 .boton-link-comprar {
   display: block;
   padding: 14px;
