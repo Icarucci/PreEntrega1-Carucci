@@ -6,7 +6,7 @@ import { CartContext } from "../../context/CartContext";
 
 
 
-const ItemDetail = ({id, nombre, descripcion, precio, categoria, sexo, imagen, talle, color, stock, marca, material, outlet, sku}) => {
+const ItemDetail = ({id, nombre, descripcion, precio, categoria, sexo, imagen, talle, color, stock, marca, material, descuento, sku}) => {
     const [quantityAdded, setQuantityAdded] = useState(0);
 
     const { addItem } = useContext(CartContext)
@@ -23,8 +23,9 @@ const ItemDetail = ({id, nombre, descripcion, precio, categoria, sexo, imagen, t
 
     return (
         <article className="card-detail">
-            <div>                        
-                <img className="img"src={imagen} alt={nombre} />
+            <div className="img-container">
+            {descuento === "outlet" && <span className="outlet">Outlet</span>}
+                <img className="img" src={imagen} alt={nombre} />
             </div>
             <div>
                 <p className="card-texto">{descripcion}</p>
@@ -42,16 +43,20 @@ const ItemDetail = ({id, nombre, descripcion, precio, categoria, sexo, imagen, t
                         <button className="boton-talles" key={index}>{t}{index < talle.length - 1 ? ' ' : ''}</button>
                     )) : 'No disponible'}</p>
                 <p className="card-valor">Valor: $ {precio}</p>
-                                {
-                    quantityAdded > 0 ? (
-                        <div className="card-link">
-                            <Link to='/cart' className="nav-link"> Terminar Compra </Link>
-                        </div>
-                        
-                    ) : (
-                        <ItemCount initial={1} stock={stock} onAdd={handleOnAdd}/>
-                    )
-                }
+                    {
+                        quantityAdded > 0 ? (
+                            <div className="ItemDetail-links">
+                                <div className="card-link-1">
+                                    <Link to='/cart' className="nav-link"> Terminar Compra </Link>
+                                </div>
+                                <div className="card-link-2">
+                                    <Link to='/camisetas' className="nav-link"> Seguir comprando </Link>
+                                </div>                        
+                            </div>
+                        ) : (
+                            <ItemCount initial={1} stock={stock} onAdd={handleOnAdd}/>
+                        )
+                    }
 
             </div>        
         </article>

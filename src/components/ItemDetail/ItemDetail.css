@@ -45,3 +45,55 @@
     cursor: pointer;
     transition: background-color 0.3s;
 }
+.img-container {
+    position: relative;
+}
+
+.outlet {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(255, 0, 0, 0.767);
+    color: white;
+    padding: 5px 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    z-index: 1;
+    border-radius: 5px;
+  }
+
+  .ItemDetail-links {
+    display: flex; /* Utiliza flexbox para alinear los elementos en fila */
+    justify-content: space-between; /* Espacia los enlaces si es necesario */
+    gap: 10px; /* Espacio entre los enlaces */
+    margin-top: 10px; /* Espacio superior si lo deseas */
+}
+
+
+.card-link-1 {
+    flex: 1;
+    padding: 14px;
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    margin: 20px 10px 0px 10px;
+    border-radius: 5px;
+  }
+  
+  .card-link-1:hover {
+    background-color: #2b9222;
+  }
+
+  .card-link-2 {
+    flex: 1;
+    padding: 14px;
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    margin: 20px 10px 0px 10px;
+    border-radius: 5px;
+  }
+  
+  .card-link-2:hover {
+    background-color: #227292;
+  }
