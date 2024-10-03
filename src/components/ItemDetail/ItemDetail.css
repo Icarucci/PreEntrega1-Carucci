@@ -63,10 +63,10 @@
   }
 
   .ItemDetail-links {
-    display: flex; /* Utiliza flexbox para alinear los elementos en fila */
-    justify-content: space-between; /* Espacia los enlaces si es necesario */
-    gap: 10px; /* Espacio entre los enlaces */
-    margin-top: 10px; /* Espacio superior si lo deseas */
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
 }
 
 
