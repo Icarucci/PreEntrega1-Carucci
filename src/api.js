@@ -1,3 +1,6 @@
+/* Utilizando Mockapi */
+
+
 import axios from "axios";
 
 export const getProducts = async () => {
@@ -38,3 +41,4 @@ export const getProductsByCategory = async (productCategory) => {
         return null;
     }
 }
+
