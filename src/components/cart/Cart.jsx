@@ -9,6 +9,13 @@ const Cart = () => {
 
     const totalSum = cart.reduce((acc, item) => acc + (item.quantity * item.precio), 0);
 
+    const handleCheckoutClick = (e) => {
+        if (cart.length === 0) {
+            e.preventDefault();
+            alert('Tu carrito está vacío');
+        }
+    };
+
     return(
         <div className="cart">
             <h1>Carrito de compras</h1>
@@ -35,10 +42,12 @@ const Cart = () => {
             </div>      
             <div className="finalizar">
                 <Link to="/camisetas" className="link">
-                        <button className="boton-link">Seguir Comprando</button>
+                    <button className="boton-link">Seguir Comprando</button>
                 </Link>
-                <button className="boton-link" onClick={clearCart}>Vaciar Carrito</button>
-                <button className="boton-link-comprar">Pagar</button>
+                    <button className="boton-link" onClick={clearCart}>Vaciar Carrito</button>
+                <Link to="/checkout" className="link" onClick={handleCheckoutClick}>
+                    <button className="boton-link-comprar">Finaliza tu compra</button>
+                </Link>
             </div>
         </div>
         )

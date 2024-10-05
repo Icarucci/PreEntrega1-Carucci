@@ -7,6 +7,7 @@ import { CartProvider } from "./context/CartContext";
 import Cart from "./components/cart/Cart";
 import { useEffect, useState } from "react";
 import Loading from "./components/Loading/Loading";
+import Checkout from "./components/Checkout/Checkout";
 
 
 
@@ -32,6 +33,7 @@ function App(){
                     <Route path="/item/:itemId" element={<ItemDetailContainer/>}/>
                     <Route path="*" element={<h1>404 Página no encontrada</h1>}/>
                     <Route path="/cart" element={<Cart/>}/>
+                    <Route path="/checkout" element={<Checkout/>}/>
                 </Routes>
             </CartProvider>
         </BrowserRouter>
