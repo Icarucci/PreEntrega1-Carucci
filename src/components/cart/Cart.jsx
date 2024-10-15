@@ -45,9 +45,14 @@ const Cart = () => {
                     <button className="boton-link">Seguir Comprando</button>
                 </Link>
                     <button className="boton-link" onClick={clearCart}>Vaciar Carrito</button>
-                <Link to="/checkout" className="link" onClick={handleCheckoutClick}>
+                {
+                    cart.length > 0 &&
+                    <Link to="/checkout" className="link" onClick={handleCheckoutClick}>
                     <button className="boton-link-comprar">Finaliza tu compra</button>
-                </Link>
+                    </Link>
+                }
+
+
             </div>
         </div>
         )

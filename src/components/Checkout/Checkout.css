@@ -46,3 +46,16 @@
     margin-top: 20px;
     height: 100%;
 }
+
+.form-msjerror {
+    color: rgb(180, 16, 16);
+}
+
+.compra-finalizada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    text-align: center;
+}
